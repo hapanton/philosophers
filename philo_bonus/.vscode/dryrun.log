@@ -1,0 +1,14 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/qsergean/school21/philosophers/philo_bonus'
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/philo_bonus.c -o sources/philo_bonus.o 
+ 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/ft_ll_atoi.c -o sources/ft_ll_atoi.o 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/lifestyle_bonus.c -o sources/lifestyle_bonus.o 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/creators_bonus.c -o sources/creators_bonus.o 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/ft_atoi.c -o sources/ft_atoi.o 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/ft_isdigit.c -o sources/ft_isdigit.o 
+ 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -c sources/utils_bonus.c -o sources/utils_bonus.o 
+cc -Wall -Wextra -Werror -g -fsanitize=thread -pthread -o philo_bonus sources/philo_bonus.o sources/ft_ll_atoi.o sources/lifestyle_bonus.o sources/creators_bonus.o sources/ft_atoi.o sources/ft_isdigit.o sources/utils_bonus.o
+make: Leaving directory `/Users/qsergean/school21/philosophers/philo_bonus'
+ 

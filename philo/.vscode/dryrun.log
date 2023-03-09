@@ -1,0 +1,15 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/qsergean/school21/philosophers/philo'
+cc -Wall -Wextra -Werror  -c sources/philo.c -o sources/philo.o 
+ 
+cc -Wall -Wextra -Werror  -c sources/ft_ll_atoi.c -o sources/ft_ll_atoi.o 
+cc -Wall -Wextra -Werror  -c sources/utils.c -o sources/utils.o 
+cc -Wall -Wextra -Werror  -c sources/lifestyle.c -o sources/lifestyle.o 
+cc -Wall -Wextra -Werror  -c sources/creators.c -o sources/creators.o 
+ 
+cc -Wall -Wextra -Werror  -c sources/ft_atoi.c -o sources/ft_atoi.o 
+cc -Wall -Wextra -Werror  -c sources/ft_isdigit.c -o sources/ft_isdigit.o 
+cc -Wall -Wextra -Werror  -c sources/monitoring.c -o sources/monitoring.o 
+cc -Wall -Wextra -Werror  -o philo sources/philo.o sources/ft_ll_atoi.o sources/utils.o sources/lifestyle.o sources/creators.o sources/ft_atoi.o sources/ft_isdigit.o sources/monitoring.o
+make: Leaving directory `/Users/qsergean/school21/philosophers/philo'
+ 
